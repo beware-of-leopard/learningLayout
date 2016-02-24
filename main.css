@@ -1,5 +1,6 @@
 *{
 	border: 1px dotted red !important;
+
 }
 
 .octodex{
@@ -19,14 +20,13 @@
 
 .authors img{
 	width: 30px;
-	float:right;
+	float:left;
 	/*position: absolute;
 	top:0;
 	right:0;*/
 }
 
 .image-caption{
-  width: 230px;
   float: right;
 }
 
@@ -46,6 +46,9 @@
 
 ul {
 	list-style: none;
+	float:left;
+	padding: 0;
+	margin: 0;
 }
 
 .octocat {
