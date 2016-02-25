@@ -11,17 +11,29 @@
 	margin: 15px;
 }
 
+ul {
+	list-style: none;
+	float:left;
+	padding: 0;
+	margin: 0;
+}
+
 .octocat img {
 	border: 1px solid grey;
 	border-radius: 3%;
 	width: 100%;
 }
 
-ul {
-	list-style: none;
-	float:left;
-	padding: 0;
-	margin: 0;
+.octocat img:hover{
+	border: 2px dotted grey;
+	margin-top: -2px;
+}
+
+/*removing the hover effect from the small images that 
+the rule above added to all images.*/
+.authors img:hover{
+	border: 1px solid grey;
+	margin-top: 0px;
 }
 
 .image-footer{
@@ -42,7 +54,6 @@ ul {
 
 .authors img{
 	width: 30px;
-	float:left;
 	margin-left: 5px;
 }
 
@@ -57,3 +68,20 @@ ul {
   text-decoration: none;
   color: grey;
 }
+
+@media (max-width:1040px){
+	.octocat {
+		width: 40%;
+		margin-bottom: 40px
+	}
+}
+
+@media (max-width:790px){
+	.octocat {
+		width: 90%;
+		float: none;
+		margin: 40px auto;
+
+	}
+}
+
